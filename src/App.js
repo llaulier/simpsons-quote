@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
-import QuoteCard from './components/QuoteCard';
+import QuoteList from './components/QuoteList';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <QuoteCard />
+      < QuoteList />
     </div>
   );
 }
