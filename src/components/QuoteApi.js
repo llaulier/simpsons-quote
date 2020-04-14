@@ -4,11 +4,18 @@ import "./DisplayQuote.js";
 import "./QuoteApi.css";
 import DisplayQuote from "./DisplayQuote";
 
+const sampleQuotes = {
+  quote: "Ha ha!",
+  character: "Nelson Muntz",
+  image:
+    "https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FNelsonMuntz.png?1497567511185",
+  characterDirection: "Left",
+};
 class QuoteApi extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      quotes: [],
+      quotes: sampleQuotes,
     };
     this.getQuotes = this.getQuotes.bind(this);
   }
@@ -29,8 +36,8 @@ class QuoteApi extends React.Component {
   render() {
     return (
       <div>
-        <figure className="QuoteApi" key={this.props.quotes}>
-          <DisplayQuote quotes={this.setState.quote} />
+        <figure className="QuoteApi">
+          <DisplayQuote quotes={this.state.quotes} />
         </figure>
         <button type="button" className="button" onClick={this.getQuotes}>
           Random!
