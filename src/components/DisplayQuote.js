@@ -3,7 +3,7 @@ import "./QuoteApi.js";
 
 function DisplayQuote({ quotes }) {
   return (
-    <div>
+    <figure className="QuoteApi">
       <img src={quotes.image} alt={quotes.character} />
       <figcaption>
         <blockquote>{quotes.quote}</blockquote>
@@ -11,7 +11,7 @@ function DisplayQuote({ quotes }) {
           <cite>{quotes.character}</cite>
         </p>
       </figcaption>
-    </div>
+    </figure>
   );
 }
 

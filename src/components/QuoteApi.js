@@ -35,10 +35,8 @@ class QuoteApi extends React.Component {
 
   render() {
     return (
-      <div>
-        <figure className="QuoteApi">
-          <DisplayQuote quotes={this.state.quotes} />
-        </figure>
+      <div className="Api">
+        <DisplayQuote quotes={this.state.quotes} />
         <button type="button" className="button" onClick={this.getQuotes}>
           Random!
         </button>
