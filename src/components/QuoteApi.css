@@ -1,4 +1,4 @@
-.QuoteCard {
+.QuoteApi {
   display: flex;
   padding: 1.25em;
   width: 400px;
@@ -7,28 +7,35 @@
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   font-size: 1.2em;
 }
+.button {
+  background-color: #554478;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+}
 
-.QuoteCard img {
+.QuoteApi img {
   display: flex;
   max-height: 120px;
   margin-right: 1.5rem;
 }
 
-.QuoteCard blockquote {
+.QuoteApi blockquote {
   margin: 0 0 1rem 0;
 }
 
-.QuoteCard figcaption p {
+.QuoteApi figcaption p {
   margin: 0.125rem 0 0 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.QuoteCard figcaption p span {
+.QuoteApi figcaption p span {
   color: #eee;
 }
 
-.QuoteCard figcaption p span.is-favorite {
+.QuoteApi figcaption p span.is-favorite {
   color: #ecc94b;
 }
