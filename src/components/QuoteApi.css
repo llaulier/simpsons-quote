@@ -1,5 +1,7 @@
 .Api {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .QuoteApi {
   display: flex;
@@ -9,12 +11,14 @@
   border-radius: 2px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   font-size: 1.2em;
+  width: 50vw;
 }
 .button {
   background-color: #554478;
   color: white;
   padding: 10px;
   border-radius: 3px;
+  width: 5rem;
 }
 
 .QuoteApi img {
